@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #ff6ec7;
+}
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .nav-logo-container img {
+    width: 160px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a {
+    font-family: "Roboto Mono", monospace;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    background-color: #ff6ec7;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav .profile-link a:hover {
+    background-color: #b30086;
+}
+
+.profile-main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.hello-container {
+    background-color: #f0f0f0;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.hello-container img {
+    width: 100%;
+    height: auto; 
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.hello-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello-container h1 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+.hello-container p {
+    font-family: "Roboto Slab", serif; 
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+.projects-container {
+    padding: 40px 0;
+    text-align: center;
+}
+.projects-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+.projects-container .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-main-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    padding: 40px 50px; 
+    background-color: #f7f7f7; 
+    border-radius: 10px; 
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); 
+    margin-top: 20px; 
+}
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.contact-card .contact-text-content {
+    display: flex;
+    flex-direction: column;
+}
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.contact-card .contact-text-content a {
+    display: inline-block;
+    background-color: transparent; 
+    color: #333;
+    border-bottom: 1px solid #ff6ec7; 
+    border: none;
+    border-radius: 5px; 
+    padding: 8px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start; 
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+.contact-card .contact-text-content p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+.contact-card .contact-text-content a:hover {
+    background-color: #ff6ec7;
+    color: white;    
+}
+
+.emoji-line {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+footer {
+    background-color: #ff6ec7;
+    color: white; 
+    padding: 30px 20px; 
+    text-align: center; 
+    font-size: 0.9em; 
+    line-height: 1.5;
+    margin-top: 0;
+    position: relative;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <script src="https://kit.fontawesome.com/52237c170a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>     
+        <section class="header-icons-container">
+            <div class="icons">
+                <a href="/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="/"><i class="fa-brands fa-x-twitter"></i></a> 
+                <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="/"><i class="fa-brands fa-linkedin-in"></i></a> 
+                <a href="/"><i class="fa-brands fa-youtube"></i></a>    
+            </div>
+        </section>
+       
+        <nav>
+            <section class="nav-logo-container">
+                <a href="./index.html"><img src="assets/img/mi-blog-logo.png" alt="Logo de mi blog"></a>
+            </section>
+            <section class="profile-link">               
+                <a href="perfil.html">Sobre mi</a>
+            </section>
+        </nav>    
+    </header>
+    
+    <main class="blog-main">
+        <section class="grid-container blogpost-img-container">            
+                <img src="./assets/img/aurora-panques.jpg" alt="blog">
+        </section>
+
+        <section class="blogpost-main-container">
+            <div class="grid-container">
+                <h3>Noticias</h3>
+                <article>
+                    <h1>Titulo del blog</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum velit ac pellentesque euismod. Suspendisse potenti. Nam vitae sodales nibh, quis consequat lacus. Morbi et sapien mi. Curabitur pulvinar nunc a tempus consectetur. Duis cursus facilisis arcu eu ornare. Morbi dignissim purus eget massa laoreet, et pellentesque elit luctus.</p>
+                    <p>Fusce venenatis convallis urna, id pulvinar elit mattis eget. Maecenas id libero urna. Nulla felis lectus, molestie eget nulla vitae, ultricies tincidunt enim. Sed laoreet enim a erat congue, at porttitor felis tincidunt. Phasellus consequat viverra lacus, in commodo nisl facilisis a. Suspendisse dictum imperdiet velit, quis pellentesque nulla. Ut at leo efficitur, blandit erat sed, eleifend ante. Aenean ac elementum nisl. Vivamus scelerisque placerat augue, eget blandit mi rutrum nec. Cras vehicula sem at tortor volutpat blandit. Mauris gravida, justo in mattis viverra, ante sapien bibendum massa, sit amet luctus massa sem sit amet nunc.</p>
+                    <p>Phasellus suscipit lectus eget lobortis ornare. Cras id nunc commodo, commodo sem ac, tempus lorem. Pellentesque et feugiat tortor, eu tincidunt ipsum. Nulla facilisi. Pellentesque eleifend venenatis odio, ac placerat purus pretium a. Cras ultrices sagittis quam eget hendrerit. Nulla pulvinar non turpis at aliquam. Ut egestas vel odio id imperdiet. Phasellus molestie nunc vitae dui sagittis, et pretium enim hendrerit. Aliquam non orci vitae ante congue aliquam. Phasellus gravida sagittis dolor vel placerat.</p>
+                </article>
+            </div>
+        </section>
+            
+        <section class="contact-main-container">
+            <div class="contact-card">
+                <img src="./assets/img/email.png" alt="contacto">
+
+                <div class="contact-text-content">
+                    <a href="">Contacto</a> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>    
+            </div>
+            
+            <div class="contact-card">
+                <img src="./assets/img/carta.png" alt="Escribe">
+
+                <div class="contact-text-content">
+                    <a href="">Escribe</a> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>    
+            </div>
+        </section>
+    </main>
+    
+    <div class="emoji-line">
+        ✨💖✨💖✨💖✨💖✨💖✨💖✨💖✨💖✨✨💖✨💖✨💖✨💖✨
+    </div>
+    
+    <footer>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </footer>
+</body>
+</html>
+
+<!-- @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .nav-logo-container img {
+    width: 200px;
+    margin-top: 10px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a {
+    font-family: "Roboto Mono", monospace;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    background-color: #47cfac;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.home-main {
+    
+}
+.blogpost-img-container {
+    padding: 0 50px 40px;
+}
+.blogpost-img-container img {
+    width: 50%;
+}
+.blogpost-main-container {
+    padding: 0 50px 40px;
+} -->

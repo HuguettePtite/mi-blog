@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #ff6ec7;
+}
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .nav-logo-container img {
+    width: 160px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a {
+    font-family: "Roboto Mono", monospace;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    background-color: #ff6ec7;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav .profile-link a:hover {
+    background-color: #b30086;
+}
+
+.main-blogs {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* El contenedor principal de la sección no es más el grid directo,
+   solo define el padding y el fondo general. */
+.noticias {
+    background-color: aliceblue; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+     /* Ya no es display: grid; para la estructura de columnas */
+}
+/* El nuevo contenedor Grid es este div interno */
+.noticias .grid-container.noticias-container {
+    display: grid; /* ¡Aquí aplicamos el grid! */
+    grid-template-columns: 1fr 2fr; 
+    gap: 30px;
+    align-items: center; 
+}
+/* El h2 ahora es hijo directo del grid-container, así que le aplicamos el span */
+.noticias .grid-container.noticias-container h2 {
+    grid-column: 1 / -1; 
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2.2em; 
+    color: #333;
+}
+/* El contenedor de la imagen */
+.noticias .noticias-img-container {
+    /* No necesita estilos de display aquí, solo de sus hijos si fuera necesario */
+}
+/*la imagen dentro de su contenedor*/
+.noticias .noticias-img-container img {
+    width: 100%;
+    height: auto; 
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* El contenedor del blog destacado (el texto y botón) */
+.noticias .Blog-destacado-container {
+    /* No necesita estilos de display aquí, sus hijos se apilan por defecto */
+}
+
+/* Estilos para el h3 y p dentro de Blog-destacado-container */
+
+.noticias .Blog-destacado-container h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.noticias .Blog-destacado-container p.descripcion {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: "Roboto Slab", serif; 
+    font-weight: normal;
+    letter-spacing: normal; 
+}
+/* El botón, su selector ahora es más específico */
+.noticias .Blog-destacado-container .read-more-button {
+    display: inline-block;
+    background-color: transparent;
+    /*max-width: max-content;*/
+    color: #ff6ec7;
+    border: 1px solid #ff6ec7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.noticias .Blog-destacado-container .read-more-button:hover {
+    background-color: #ff6ec7;
+    color: white;
+}
+
+/* El contenedor principal de la sección */
+.ultimos-blogpost-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    background-color: aliceblue; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+/* El h2 de ultimos-blogpost-grid */
+.ultimos-blogpost-grid h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0;
+}
+/* El contenedor GRID de las tarjetas - CAMBIO DE NOMBRE A grid-container-blog-cards */
+.ultimos-blogpost-grid .grid-container-blog-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* O repeat(3, 1fr) */
+    gap: 25px;
+}
+.blog-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.blog-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.blog-card .descripcion-ultimo-blogpost {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #666;
+    flex-grow: 1;
+}
+.blog-card .read-more-button {
+    display: inline-block;
+    background-color: transparent; 
+    color: #ff6ec7; 
+    border: 1px solid #ff6ec7;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start; 
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card .read-more-button:hover {
+    background-color: #ff6ec7;
+    color: white;
+}
+
+.emoji-line {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+footer {
+    background-color: #ff6ec7;
+    color: white; 
+    padding: 30px 20px; 
+    text-align: center; 
+    font-size: 0.9em; 
+    line-height: 1.5;
+    margin-top: 0;
+    position: relative;
+}

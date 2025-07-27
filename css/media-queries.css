@@ -1,0 +1,124 @@
+/* Media Query para index.html el nav en pantallas pequeñas */
+@media (max-width:768px) {
+    .home-main {
+        height: calc(100vh - 140px);
+    }    
+}
+
+/* Media Query para blogs.html pantallas pequeñas (ej. móviles) */
+@media (max-width: 768px) {
+    .noticias {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 20px;
+    }
+    .noticias img {
+        max-height: 250px;
+    }
+    .noticias h2 {
+        text-align: center;
+    }
+}
+
+/* Media Queries para blogs.html responsividad de 2 columnas en tablets */
+@media (max-width: 992px) {
+    .ultimos-blogpost-grid .grid-container-blog-cards { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Query para responsividad de 1 columna en móviles */
+@media (max-width: 768px) {
+    .ultimos-blogpost-grid .grid-container-blog-cards { 
+        grid-template-columns: 1fr;
+    }
+    .blog-card img {
+        height: 180px;
+    }
+}
+
+/* MEDIA QUERIES para blog.html */
+@media (max-width: 768px) {
+    .blog-main {
+        padding: 15px; 
+        gap: 30px;
+    }
+    .blogpost-img-container {
+        padding: 0; 
+    }
+    .blogpost-main-container .grid-container-noticias h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .blogpost-main-container .grid-container-noticias article h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .contact-main-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 30px 20px;
+    }
+    .contact-card {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .contact-card img {
+        margin-left: 0; 
+        margin-bottom: 10px; 
+    }
+    .contact-card .contact-text-content a {
+        align-self: center; 
+    }
+}
+
+/* MEDIA QUERIES para perfil.html */
+@media (max-width: 768px) {
+    .profile-main {
+        padding: 15px;
+        gap: 30px;
+    }
+    .hello-container {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .hello-container img {
+        margin: 0 auto 20px auto; 
+    }
+    .hello-container div {
+        align-items: center; 
+    }
+    .projects-container h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    .projects-container .projects-grid {
+        grid-template-columns: 1fr; 
+    }
+    .contact-main-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 30px 20px;
+    }
+    .contact-card {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .contact-card img {
+        margin-bottom: 10px; 
+    }
+    .contact-card .contact-text-content a {
+        align-self: center; 
+    }
+}
+
+/*Media Query para footer*/
+@media (max-width: 768px) {
+    .emoji-line {
+        text-align: center;
+        padding: 20px 0 0 0;
+        font-size: .8em;
+        letter-spacing: 5px;
+    }
+}
