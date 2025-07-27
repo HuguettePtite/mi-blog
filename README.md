@@ -2,15 +2,15 @@
 
 ## Descripción del Proyecto
 
-Este repositorio contiene el código fuente de mi blog personal, un espacio donde comparto mis conocimientos y experiencias en el mundo del **Diseño y Desarrollo Web**. Es un proyecto creado con el objetivo principal de aplicar y demostrar mis habilidades en **HTML5** y **CSS3**, prestando especial atención a la **maquetación responsiva** y el **diseño semántico**.
+Este repositorio contiene el código fuente de mi blog personal, un espacio para compartir conocimientos y experiencias en el mundo del **Diseño y Desarrollo Web**. Es un proyecto creado para mi curso de Maquetacion con CSS en PLATZI, su objetivo principal es aplicar y demostrar mis habilidades en **HTML5** y **CSS3**, prestando especial atención a la **maquetación responsiva** y el **diseño semántico**.
 
 ![Captura de pantalla de la página de inicio del blog)](assets/img/inicio.png)
 
 ## Características Destacadas
 
 * **HTML5 Semántico**: Estructura del contenido optimizada para la accesibilidad y el SEO, utilizando etiquetas como `<header>`, `<nav>`, `<main>`, `<section>`, y `<footer>`.
-* **Diseño Responsivo**: Adaptado para una experiencia de usuario óptima en diferentes dispositivos (escritorio, tabletas y móviles) gracias al uso de **Media Queries**.
-* **Maquetación Avanzada con CSS Grid y Flexbox**: Implementación de layouts complejos y flexibles utilizando las últimas técnicas de CSS Grid y Flexbox para una alineación y distribución eficientes del contenido.
+* **Diseño Responsivo**: Adaptado para una experiencia de usuario óptima en diferentes dispositivos (escritorio y móviles) gracias al uso de **Media Queries**.
+* **Maquetación Avanzada con CSS Grid y Flexbox**: Implementación de layouts complejos y flexibles utilizando técnicas de CSS Grid y Flexbox para una alineación y distribución eficientes del contenido.
 * **Estilos Modernos y Personalizados**: Uso de propiedades CSS para crear un diseño visual atractivo y una interfaz de usuario intuitiva, incluyendo:
     * Manejo de **imágenes de fondo** con `background-size: cover` y `background-position: center`.
     * **Tipografías personalizadas** importadas con `@import url()`.
@@ -28,8 +28,6 @@ Este repositorio contiene el código fuente de mi blog personal, un espacio dond
 
 Puedes explorar el blog directamente desde tu navegador abriendo el archivo `index.html`.
 
-**¡Próximamente disponible en GitHub Pages!**
-
 ## Contribución
 
 Este es un proyecto personal, pero cualquier sugerencia o feedback es bienvenido.
@@ -38,6 +36,6 @@ Este es un proyecto personal, pero cualquier sugerencia o feedback es bienvenido
 
 [Huguette Petite]
 [www.linkedin.com/in/huguettea134711a3]
-[Tu Enlace a red social]
+
 
 ---
